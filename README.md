@@ -1,4 +1,4 @@
-# <span style="color:#FF4C00">E</span> | <span style="color:#1E90FF">Strategy, Analytics, Finance & Innovation</span>
+# <span style="color:#FF4C00">Esraa Ahmed AboAli</span> | <span style="color:#1E90FF">Strategy, Analytics, Finance & Innovation</span>
 
 Welcome to my professional portfolio. This repository showcases my work, projects, and contributions spanning finance, analytics, operations, strategy, and innovation.
 
@@ -41,7 +41,7 @@ Explore my live portfolio: [EsraaAboAli.github.io](https://EsraaAboAli.github.io
 
 ---
 
-## <span style="color:#20B2AA">Contact</span>
+## <span style="color:#20B2AA">Let's Connect</span>
 
 - Email: [esraa.a.aboali@gmail.com]  
 - LinkedIn: [www.linkedin.com/in/esraa-aboali] 
