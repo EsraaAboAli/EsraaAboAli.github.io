@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #f5f5f5;
+      background: linear-gradient(135deg, #1a1a1a, #333333);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #FF4C00;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #1E90FF;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #32CD32;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #FF69B4;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-weight: 700;
+    }
+
+    .experience, .projects {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Button style for portfolio link */
+    .portfolio-btn {
+      margin-top: 2rem;
+      padding: 12px 30px;
+      background: #1E90FF;
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .portfolio-btn:hover {
+      background: #FF4C00;
+    }
+
+    /* Animated background circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 20s linear infinite;
+    }
+
+    .circle1 { width: 200px; height: 200px; background: #FF4C00; top: 10%; left: 15%; }
+    .circle2 { width: 300px; height: 300px; background: #1E90FF; top: 50%; left: 60%; }
+    .circle3 { width: 150px; height: 150px; background: #32CD32; top: 70%; left: 25%; }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-50px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Animated background circles -->
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
+
+  <h1>E</h1>
+  <h2>Strategic Analytics, Finance, Operations & Innovation</h2>
+
+  <p>Hello! I am a data-driven strategist and problem solver with experience across business development, regional operations, finance, analytics, and innovation. I transform complex data into actionable insights and measurable impact.</p>
+
+  <div class="section-title">Core Skills</div>
+  <div class="skills">
+    <span>Strategy</span>
+    <span>Analytics</span>
+    <span>Finance</span>
+    <span>Operations</span>
+    <span>Leadership</span>
+    <span>Innovation</span>
+    <span>Business Development</span>
+    <span>Data Visualization</span>
+  </div>
+
+  <div class="section-title">Professional Experience</div>
+  <div class="experience">
+    <p><strong>Specialist – Regional Management Operations' Office | AGODA | Aug 2024 – Present</strong><br>
+    Strategic and analytical support to senior leadership, dashboards, and initiatives.</p>
+
+    <p><strong>Business Development Manager | AGODA | Apr 2023 – Jul 2024</strong><br>
+    Data-driven strategies, reporting, stakeholder alignment, and business development.</p>
+
+    <p><strong>Other Roles:</strong> HSBC GSC, Agricultural Bank of Egypt, British Council, Etisalat UAE – covering analytics, finance, operations, risk, and advisory.</p>
+  </div>
+
+  <div class="section-title">Projects & Impact</div>
+  <div class="projects">
+    <p><strong>Interactive Dashboards:</strong> Operational insights, performance tracking, and strategic decision-making.</p>
+    <p><strong>Automation Initiatives:</strong> Streamlined workflows and improved efficiency.</p>
+    <p><strong>Strategic Reports & Analysis:</strong> Actionable insights driving leadership decisions.</p>
+    <p><strong>Innovation & Impact Projects:</strong> Business development and creative problem-solving initiatives.</p>
+  </div>
+
+  <a href="https://EsraaAboAli.github.io" class="portfolio-btn">Visit My Portfolio</a>
+
+</body>
+</html>
