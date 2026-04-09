@@ -1,4 +1,4 @@
-# <span style="color:#FF4C00">Esraa Ahmed AboAli</span> | <span style="color:#1E90FF">Strategy, Analytics, Finance & Innovation</span>
+# <span style="color:#FF4C00">E</span> | <span style="color:#1E90FF">Strategy, Analytics, Finance & Innovation</span>
 
 Welcome to my professional portfolio. This repository showcases my work, projects, and contributions spanning finance, analytics, operations, strategy, and innovation.
 
@@ -21,12 +21,12 @@ I am a **data-driven strategist and problem solver** with experience across busi
 ## <span style="color:#8A2BE2">Professional Experience Highlights</span>
 
 - **Specialist – Regional Management Operations' Office | AGODA | Aug 2024 – Present**  
-  Providing strategic and analytical support to senior leadership, leading dashboards, and strategic initiatives.  
+  Strategic and analytical support to senior leadership, dashboards, and initiatives.
 
 - **Business Development Manager | AGODA | Apr 2023 – Jul 2024**  
-  Designed and executed **data-driven business strategies**, reporting frameworks, and stakeholder engagement initiatives.  
+  Data-driven strategies, reporting, stakeholder alignment, and business development.
 
-- **Other Roles:** HSBC GSC, Agricultural Bank of Egypt, British Council, Etisalat UAE – covering fraud investigation, reporting, alternative channels, and customer advisory.  
+- **Other Roles:** HSBC GSC, Agricultural Bank of Egypt, British Council, Etisalat UAE – analytics, finance, operations, risk, advisory.
 
 ---
 
@@ -34,8 +34,8 @@ I am a **data-driven strategist and problem solver** with experience across busi
 
 - **Interactive Dashboards:** Operational insights, performance tracking, and strategic decision-making.  
 - **Process & Automation Projects:** Streamlined workflows, reducing manual effort and errors.  
-- **Strategic Reports & Analysis:** Delivering actionable insights for leadership decisions.  
-- **Innovation & Impact Initiatives:** Driving business development and creative problem-solving.  
+- **Strategic Reports & Analysis:** Actionable insights for leadership decisions.  
+- **Innovation & Impact Initiatives:** Business development and creative problem-solving.
 
 Explore my live portfolio: [EsraaAboAli.github.io](https://EsraaAboAli.github.io)
 
@@ -44,8 +44,8 @@ Explore my live portfolio: [EsraaAboAli.github.io](https://EsraaAboAli.github.io
 ## <span style="color:#20B2AA">Contact</span>
 
 - Email: [esraa.a.aboali@gmail.com]  
-- LinkedIn: [www.linkedin.com/in/esraa-aboali]  
+- LinkedIn: [www.linkedin.com/in/esraa-aboali] 
 
 ---
 
-*This repository reflects my **multidimensional expertise in strategy, analytics, finance, operations, and innovation**. Every project and initiative demonstrates measurable impact and creative problem-solving.*
+*This repository reflects my **multidimensional expertise in strategy, analytics, finance, operations, and innovation**. Every project and initiative demonstrates measurable impact and creative problem-solving.**.*
