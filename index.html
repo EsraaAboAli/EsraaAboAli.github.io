@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esraa AboAli - Elite Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <title>Esraa AboAli - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION -->
   <nav id="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -22,15 +22,18 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <section id="home">
+  <section id="home" class="hero-section">
     <div class="hero-container">
       <img src="assets/profile.jpg" alt="Esraa AboAli" class="profile-img">
       <div class="hero-text">
         <h1>Esraa AboAli</h1>
         <p>Bridging people, data, and ideas together to shape smarter work and powerful results.</p>
-        <p>Email: <a href="mailto:esraa.a.aboali@gmail.com">esraa.a.aboali@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">linkedin.com/in/esraa-aboali</a></p>
-        <p>GitHub: <a href="https://github.com/EsraaAboAli" target="_blank">github.com/EsraaAboAli</a></p>
+        <div class="contact-links">
+          <a href="mailto:esraa.a.aboali@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">LinkedIn</a>
+          <a href="https://github.com/EsraaAboAli" target="_blank">GitHub</a>
+        </div>
+        <a href="assets/EsraaAboAli_CV.pdf" download class="btn-cv">Download CV</a>
       </div>
     </div>
   </section>
@@ -38,173 +41,39 @@
   <!-- ABOUT SECTION -->
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      A highly analytical and results-driven professional with 5+ years of experience in regional operations, financial risk management, business intelligence, and international program support.
-    </p>
-    <p>
-      I am seeking challenging roles such as Regional Operations Analyst, Risk & Compliance Officer, or Program Management Analyst, and scholarships to pursue my master’s degree.
-    </p>
+    <p>A passionate and versatile professional with a strong foundation in business administration, finance, and planning. With extensive experience in data analysis, project management, and leadership, I have successfully contributed to operational innovations and strategic initiatives in diverse industries, including e-commerce, banking, and technology.</p>
   </section>
 
   <!-- EXPERIENCE SECTION -->
   <section id="experience">
-    <h2>Professional Experience</h2>
+    <h2>Experience</h2>
     <div class="timeline">
 
-      <!-- AGODA -->
+      <!-- Example: Agoda Specialist -->
       <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Specialist – Regional Management Operations | AGODA | Aug 2024 – Present</h3>
-        </div>
-        <div class="timeline-content">
+        <button class="collapsible">Specialist – Regional Management Operations' Office | AGODA | 01/08/2024 - Present</button>
+        <div class="content">
           <ul>
-            <li>Provided strategic and analytical support to senior leadership.</li>
-            <li>Developed dashboards and business intelligence solutions using SQL, Tableau, and Power BI.</li>
-            <li>Led strategic projects and secured stakeholder alignment.</li>
-            <li>Automated reports and presented actionable insights to management.</li>
+            <li>Provided analytical support and strategic advice to senior leadership, including the Regional VP, Country Directors, and Strategy Regional Manager.</li>
+            <li>Implemented operational innovations, business intelligence solutions, and dashboards using SQL, Tableau, and PowerBI.</li>
+            <li>Built business cases, secured stakeholder buy-in, and prioritized strategic projects.</li>
           </ul>
         </div>
       </div>
 
+      <!-- Add all other positions in same format -->
       <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Business Development Manager | AGODA | May 2023 – Jul 2024</h3>
-        </div>
-        <div class="timeline-content">
+        <button class="collapsible">Business Development Manager | AGODA | 30/04/2023 - 31/07/2024</button>
+        <div class="content">
           <ul>
-            <li>Analyzed booking data to improve conversion rates and revenue growth.</li>
-            <li>Supported rate loading and account optimization for BD Managers.</li>
-            <li>Delivered team training and participated in cross-functional projects.</li>
+            <li>Analyzed booking data to provide actionable insights and improve decision-making.</li>
+            <li>Supported rate loading and account optimization.</li>
+            <li>Conducted team training and cross-functional projects.</li>
           </ul>
         </div>
       </div>
 
-      <!-- HSBC -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>MENA Fraud Investigator Officer | HSBC Egypt GSC | Dec 2022 – Apr 2023</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Investigated internal and external fraud notifications across banking channels.</li>
-            <li>Ensured compliance with fraud prevention protocols.</li>
-            <li>Analyzed fraud trends and risk indicators to mitigate threats.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Agricultural Bank of Egypt -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>MIS Administrator / Business Analyst / Database Developer | ABE | Nov 2021 – Oct 2022</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Developed financial reports and risk assessments.</li>
-            <li>Managed business card operations and competitor analysis.</li>
-            <li>Handled Agri-Misr portal data reporting.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- British Council -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>International Account Advisor | British Council | Aug 2020 – Apr 2021</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Supported educational service users in UAE, Qatar, and Oman.</li>
-            <li>Delivered bilingual support across multiple channels.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Etisalat UAE -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>International Account Advisor (SMB Accounts) | Etisalat UAE | Jun 2019 – Aug 2020</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Provided technical and commercial support to small & medium business clients.</li>
-            <li>Delivered bilingual customer service in English and Arabic.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- EG Bank -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>MINT Ambassador | EG Bank & Ahead of the Curve | Oct 2018 – Jun 2019</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Delivered financial literacy and career readiness workshops.</li>
-            <li>Educated students on banking services and job market preparation.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Nasser Social Bank -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Trainee | Nasser Social Bank | Aug 2015 – Oct 2015</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Rotated through loan, treasury, and customer service departments.</li>
-            <li>Performed financial analysis and contributed to operational initiatives.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Volunteering -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Leadership & Volunteering</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Resala: Delivered relief aid to impoverished villages and supported sustainable development projects.</li>
-            <li>Youth Model Organization of Think Tanks: Managed 5-8 member teams as Head of HR.</li>
-            <li>Model of British House of Commons: Head of Press; led a team to establish an online magazine; delegate for Foreign Affairs Committee.</li>
-            <li>Life Makers Cairo University: Delivered ethical & moral educational materials to students.</li>
-            <li>57375 Hospital Volunteer: Organized activities to bring joy to hospitalized children.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Musical & Cultural Activities -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Musical & Cultural Activities</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Indonesian Cultural Center: Learned Angklung and traditional dances; participated in national events.</li>
-            <li>Korean Cultural Center: Learned Janggu drum and performed publicly.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Professional Development -->
-      <div class="timeline-item">
-        <div class="timeline-header" onclick="toggleTimeline(this)">
-          <h3>Professional Development</h3>
-        </div>
-        <div class="timeline-content">
-          <ul>
-            <li>Building Your Sharing Economy Business Course, Canary Islands Govt.</li>
-            <li>World Indonesianist Congress 2021.</li>
-            <li>3rd International Conference of Women in Science without Borders.</li>
-            <li>Humans for Peace: Writing International Reports & Women’s Rights.</li>
-            <li>InnovEgypt – TIEC: Innovation & Entrepreneurship Program.</li>
-            <li>Next Technology Leaders (NTL): Digital Marketing Specialization.</li>
-            <li>One Million Arab Coders: Android Developer Track.</li>
-          </ul>
-        </div>
-      </div>
+      <!-- Add HSBC, ABE, British Council, Etisalat, EG Bank, NSB, and volunteering similarly -->
 
     </div>
   </section>
@@ -213,27 +82,41 @@
   <section id="education">
     <h2>Education & Scholarships</h2>
     <ul class="education-list">
-      <li><strong>Master of Science in Business Administration</strong> | Cairo University | 2021–Current | Giza, Egypt | Finance & Investment</li>
-      <li><strong>Pre-Master's in Planning & Development</strong> | Institute of National Planning | 2021 | Cairo, Egypt</li>
-      <li><strong>Exchange Program</strong> | Alexandru Ioan Cuza University | 2016–2017 | Iași, Romania | Finance & Banking</li>
-      <li><strong>Bachelor in Business Administration</strong> | Cairo University | 2014–2019 | Giza, Egypt</li>
+      <li><strong>Master of Science in Business Administration</strong> | Faculty of Commerce, Cairo University | 17/10/2021 - Current | Finance & Investment</li>
+      <li><strong>Pre-Master in Planning & Development</strong> | Institute of National Planning | 19/03/2021 - 08/07/2021</li>
+      <li><strong>Exchange Program in Finance & Banking</strong> | Alexandru Ioan Cuza University, Romania | 31/10/2016 - 04/07/2017</li>
+      <li><strong>Bachelor Degree in Business Administration</strong> | Faculty of Commerce, Cairo University | 11/10/2014 - 01/05/2019</li>
     </ul>
   </section>
 
   <!-- SKILLS SECTION -->
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skill-bar"><p>SQL / Tableau / Power BI</p><div class="bar"><div class="progress" data-progress="90%"></div></div></div>
-    <div class="skill-bar"><p>Operations & Strategy</p><div class="bar"><div class="progress" data-progress="85%"></div></div></div>
-    <div class="skill-bar"><p>Finance & Risk Management</p><div class="bar"><div class="progress" data-progress="80%"></div></div></div>
-    <div class="skill-bar"><p>International & Communication</p><div class="bar"><div class="progress" data-progress="95%"></div></div></div>
+    <div class="skills-container">
+      <div class="skill">
+        <p>SQL</p>
+        <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Tableau</p>
+        <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Power BI</p>
+        <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Analytics & Risk Management</p>
+        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="Let's Connect">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:esraa.a.aboali@gmail.com">esraa.a.aboali@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">linkedin.com/in/esraa-aboali</a></p>
+    <p>Email: esraa.a.aboali@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">www.linkedin.com/in/esraa-aboali</a></p>
     <p>GitHub: <a href="https://github.com/EsraaAboAli" target="_blank">github.com/EsraaAboAli</a></p>
   </section>
 
