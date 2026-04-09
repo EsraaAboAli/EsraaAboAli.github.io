@@ -48,4 +48,4 @@ Explore my live portfolio: [EsraaAboAli.github.io](https://EsraaAboAli.github.io
 
 ---
 
-*This repository reflects my **multidimensional expertise in strategy, analytics, finance, operations, and innovation**. Every project and initiative demonstrates measurable impact and creative problem-solving*.**
+*This repository reflects my **multidimensional expertise in strategy, analytics, finance, operations, and innovation**. Every project and initiative demonstrates measurable impact and creative problem-solving*.*
