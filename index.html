@@ -1,306 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esraa Abo Ali | Elite Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* --- Global Styles --- */
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(120deg, #f8f9fa, #e9ecef);
-      scroll-behavior: smooth;
-      color: #212529;
-    }
-    a { text-decoration: none; color: inherit; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esraa Abo Ali Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Reset & fonts */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Roboto', sans-serif; background: #f5f5f5; color: #333; scroll-behavior: smooth; }
+  a { text-decoration: none; color: inherit; }
+  ul { padding-left: 20px; }
 
-    /* --- Navigation Bar --- */
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(255,255,255,0.95);
-      display: flex;
-      justify-content: center;
-      z-index: 999;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      padding: 1rem 0;
-      margin: 0;
-    }
-    nav ul li a {
-      font-weight: 700;
-      color: #212529;
-      transition: 0.3s;
-    }
-    nav ul li a:hover, nav ul li a.active {
-      color: #0d6efd;
-    }
+  /* Nav Bar */
+  nav { position: fixed; top: 0; width: 100%; background: #fff; display: flex; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 999; }
+  nav ul { display: flex; gap: 25px; padding: 15px; }
+  nav ul li { font-weight: 700; cursor: pointer; }
+  nav ul li.active { color: #2c3e50; }
 
-    /* --- Hero Section --- */
-    #hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 120px 2rem 60px 2rem;
-      gap: 2rem;
-    }
-    #hero img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-      flex-shrink: 0;
-    }
-    #hero .intro {
-      max-width: 700px;
-    }
-    #hero h1 {
-      margin: 0 0 0.5rem;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    #hero p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    #hero .cta {
-      margin-top: 1rem;
-    }
-    #hero .cta a {
-      padding: 0.6rem 1.2rem;
-      background-color: #0d6efd;
-      color: #fff;
-      border-radius: 5px;
-      font-weight: 700;
-      transition: 0.3s;
-    }
-    #hero .cta a:hover {
-      background-color: #084298;
-    }
+  /* Hero Section */
+  .hero { display: flex; align-items: center; justify-content: flex-start; padding: 120px 50px 50px 50px; background: linear-gradient(135deg,#e0f7fa,#ffffff); gap: 30px; }
+  .hero img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .hero .intro { max-width: 700px; }
+  .hero .intro h1 { font-size: 36px; margin-bottom: 10px; }
+  .hero .intro p { font-size: 16px; line-height: 1.6; }
+  .hero .intro a.cv-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #2c3e50; color: #fff; border-radius: 6px; font-weight: 700; }
 
-    /* --- Section Styles --- */
-    section {
-      padding: 80px 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      font-weight: 700;
-      color: #0d6efd;
-    }
+  /* Sections */
+  section { padding: 60px 50px; max-width: 1200px; margin: 0 auto; }
+  section h2 { font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid #2c3e50; display: inline-block; padding-bottom: 5px; }
 
-    /* --- Timeline Styles --- */
-    .timeline .timeline-item {
-      margin-bottom: 1rem;
-    }
-    .collapsible {
-      background-color: #f1f1f1;
-      color: #212529;
-      cursor: pointer;
-      padding: 12px 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1rem;
-      font-weight: 700;
-      border-left: 4px solid #0d6efd;
-      transition: background 0.3s;
-    }
-    .collapsible:hover {
-      background-color: #e2e6ea;
-    }
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f9f9f9;
-      border-left: 4px solid #0d6efd;
-      margin-bottom: 0.5rem;
-    }
+  /* Collapsible Timeline */
+  .collapsible { background-color: #fff; color: #2c3e50; cursor: pointer; padding: 15px 20px; width: 100%; border: none; text-align: left; outline: none; font-size: 16px; font-weight: 700; border-left: 4px solid #2c3e50; margin-bottom: 5px; border-radius: 4px; transition: 0.3s; }
+  .collapsible:hover { background-color: #f0f0f0; }
+  .active, .collapsible:active { background-color: #f0f0f0; }
+  .content { padding: 0 20px; display: none; overflow: hidden; background-color: #fafafa; border-radius: 4px; margin-bottom: 10px; }
+  .content ul li { padding: 5px 0; }
 
-    /* --- Skills Section --- */
-    .skill {
-      margin-bottom: 1rem;
-    }
-    .skill-name {
-      font-weight: 700;
-      margin-bottom: 0.3rem;
-    }
-    .skill-bar {
-      width: 100%;
-      background-color: #e9ecef;
-      border-radius: 5px;
-      overflow: hidden;
-      height: 20px;
-    }
-    .skill-fill {
-      height: 100%;
-      width: 0;
-      background-color: #0d6efd;
-      text-align: right;
-      padding-right: 5px;
-      color: #fff;
-      font-weight: 700;
-      border-radius: 5px;
-      transition: width 2s;
-    }
+  /* Skills section: creative chips */
+  .skills-container { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px; }
+  .skill-chip { padding: 10px 20px; background: #2c3e50; color: #fff; border-radius: 30px; font-weight: 700; transition: 0.3s; cursor: default; }
+  .skill-chip:hover { background: #1a2733; transform: scale(1.05); }
 
-    /* --- Footer --- */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #f1f1f1;
-      color: #212529;
-    }
-  </style>
+  /* Fade-in animation */
+  .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* Footer */
+  footer { text-align: center; padding: 30px; background: #2c3e50; color: #fff; }
+</style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <img src="assets/profile.jpg" alt="Esraa Abo Ali">
-    <div class="intro">
-      <h1>Esraa Abo Ali</h1>
-      <p>Bridging people, data, and ideas together to shape smarter work and more powerful results.</p>
-      <div class="cta">
-        <a href="assets/EsraaAboAli_CV.pdf" download>Download CV</a>
-      </div>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <img src="assets/profile.jpg" alt="Esraa Abo Ali">
+  <div class="intro">
+    <h1>Esraa Abo Ali</h1>
+    <p>Bridging people, data, and ideas to shape smarter work and more powerful results. Finance, Analytics & Operational Excellence professional with global experience.</p>
+    <a class="cv-btn" href="assets/EsraaAboAli_CV.pdf" download>Download CV</a>
+  </div>
+</section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <!-- Paste the full collapsible experience timeline here -->
-      <!-- For brevity, it’s the full code I sent in the previous message -->
+<!-- Experience Section -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline fade-in">
+    <button class="collapsible">Specialist – Regional Management Ops | AGODA | 08/2024 - Current</button>
+    <div class="content">
+      <ul>
+        <li>Analytical support & strategic advice to senior leadership.</li>
+        <li>Implemented business intelligence dashboards & operational innovations.</li>
+        <li>Delivered actionable insights using SQL & Tableau.</li>
+        <li>Led strategic initiatives and stakeholder alignment.</li>
+      </ul>
     </div>
-  </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education & Scholarships</h2>
-    <ul>
-      <li>Master of Science in Business Administration | Cairo University | 2021 - Current | Finance & Investment</li>
-      <li>Pre-Master’s in Planning & Development | INP | 2021</li>
-      <li>Exchange Program | Alexandru Ioan Cuza University | Romania | 2016-2017</li>
-      <li>Bachelor in Business Administration | Cairo University | 2014-2019</li>
-      <li>Scholarships & Recognitions included Erasmus Exchange, Academic Achievements</li>
-    </ul>
-  </section>
+    <button class="collapsible">Business Development Manager | AGODA | 05/2023 - 07/2024</button>
+    <div class="content">
+      <ul>
+        <li>Analyzed booking data to improve conversion and competitiveness.</li>
+        <li>Supported rate loading & account optimization.</li>
+        <li>Conducted training sessions and cross-functional projects.</li>
+      </ul>
+    </div>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill">
-      <div class="skill-name">SQL</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="95%">95%</div></div>
+    <button class="collapsible">MENA Fraud Investigator Officer | HSBC GSC | 12/2022 - 04/2023</button>
+    <div class="content">
+      <ul>
+        <li>Investigated internal/external fraud notifications.</li>
+        <li>Ensured compliance with protocols & delivered actionable insights.</li>
+      </ul>
     </div>
-    <div class="skill">
-      <div class="skill-name">Tableau / PowerBI</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="90%">90%</div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Data Analysis & Reporting</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="92%">92%</div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Operations & Strategic Planning</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="88%">88%</div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Leadership & Project Management</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="90%">90%</div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Risk Management & Fraud Detection</div>
-      <div class="skill-bar"><div class="skill-fill" data-percentage="85%">85%</div></div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:esraa.a.aboali@gmail.com">esraa.a.aboali@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">linkedin.com/in/esraa-aboali</a></p>
-    <p>GitHub: <a href="https://github.com/EsraaAboAli" target="_blank">github.com/EsraaAboAli</a></p>
-  </section>
+    <button class="collapsible">MIS Administrator / Business Analyst | ABE | 11/2021 - 10/2022</button>
+    <div class="content">
+      <ul>
+        <li>Developed financial reports & risk assessments.</li>
+        <li>Managed business card operations & competitor analysis.</li>
+        <li>Handled Agri-Misr portal data reporting.</li>
+      </ul>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2026 Esraa Abo Ali
-  </footer>
+    <button class="collapsible">International Account Advisor | British Council | 08/2020 - 04/2021</button>
+    <div class="content">
+      <ul>
+        <li>Supported UAE, Qatar & Oman educational clients via multiple channels.</li>
+        <li>Delivered bilingual support.</li>
+      </ul>
+    </div>
 
-  <!-- Scripts -->
-  <script>
-    // Collapsible Timeline
-    const coll = document.getElementsByClassName("collapsible");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
-      });
-    }
+    <button class="collapsible">International Account Advisor | Etisalat UAE | 06/2019 - 08/2020</button>
+    <div class="content">
+      <ul>
+        <li>Supported SMB clients with technical & commercial solutions.</li>
+        <li>Delivered bilingual support.</li>
+      </ul>
+    </div>
 
-    // Animated Skills Bars
-    const skillFills = document.querySelectorAll(".skill-fill");
-    const skillsSection = document.getElementById("skills");
-    window.addEventListener("scroll", () => {
-      const sectionPos = skillsSection.getBoundingClientRect().top;
-      const screenPos = window.innerHeight;
-      if(sectionPos < screenPos - 50){
-        skillFills.forEach(fill => {
-          fill.style.width = fill.dataset.percentage;
-        });
-      }
+    <button class="collapsible">MINT Ambassador | EGBANK | 10/2018 - 04/2019</button>
+    <div class="content">
+      <ul><li>Delivered financial literacy & career readiness workshops.</li></ul>
+    </div>
+
+    <button class="collapsible">Trainee | Nasser Social Bank | 08/2015 - 10/2015</button>
+    <div class="content">
+      <ul><li>Rotated through loans, treasury & customer service departments.</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <h2>Education & Scholarships</h2>
+  <ul class="fade-in">
+    <li>Master of Science in Business Administration | Cairo University | 2021 - Current | Finance & Investment</li>
+    <li>Pre-Master's in Planning & Development | Institute of National Planning | 2021</li>
+    <li>Exchange Program | Alexandru Ioan Cuza University, Romania | 2016-2017 | Finance & Banking</li>
+    <li>Bachelor of Business Administration | Cairo University | 2014-2019</li>
+  </ul>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container fade-in">
+    <div class="skill-chip">SQL</div>
+    <div class="skill-chip">Tableau</div>
+    <div class="skill-chip">Power BI</div>
+    <div class="skill-chip">Data Analytics</div>
+    <div class="skill-chip">Operations Strategy</div>
+    <div class="skill-chip">Leadership</div>
+    <div class="skill-chip">Finance & Risk</div>
+    <div class="skill-chip">Project Management</div>
+    <div class="skill-chip">Stakeholder Alignment</div>
+    <div class="skill-chip">International Communication</div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="fade-in">Email: <a href="mailto:esraa.a.aboali@gmail.com">esraa.a.aboali@gmail.com</a></p>
+  <p class="fade-in">LinkedIn: <a href="https://www.linkedin.com/in/esraa-aboali" target="_blank">linkedin.com/in/esraa-aboali</a></p>
+  <p class="fade-in">GitHub: <a href="https://github.com/EsraaAboAli" target="_blank">github.com/EsraaAboAli</a></p>
+</section>
+
+<footer>
+  &copy; 2026 Esraa Abo Ali
+</footer>
+
+<script>
+  // Collapsible Experience
+  const coll = document.getElementsByClassName("collapsible");
+  for(let i=0;i<coll.length;i++){
+    coll[i].addEventListener("click",function(){
+      this.classList.toggle("active");
+      const content=this.nextElementSibling;
+      if(content.style.display==="block"){ content.style.display="none"; }
+      else{ content.style.display="block"; }
     });
+  }
 
-    // Smooth Scroll Active Nav
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        if(pageYOffset >= sectionTop){
-          current = section.getAttribute("id");
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if(link.getAttribute("href").includes(current)){
-          link.classList.add("active");
-        }
-      });
+  // Fade-in sections
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold:0.2, rootMargin:"0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver(function(entries,observer){
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     });
-  </script>
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Active nav highlight
+  const sections=document.querySelectorAll('section');
+  const navLi=document.querySelectorAll('nav ul li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(section=>{
+      const sectionTop=section.offsetTop-70;
+      if(scrollY>=sectionTop){ current=section.getAttribute('id'); }
+    });
+    navLi.forEach(li=>{ li.classList.remove('active'); if(li.querySelector('a').getAttribute('href').includes(current)){ li.classList.add('active'); } });
+  });
+</script>
+
 </body>
 </html>
