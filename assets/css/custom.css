@@ -1,0 +1,8 @@
+.hero {
+  background: linear-gradient(
+      rgba(214, 51, 108, 0.5),
+      rgba(176, 0, 88, 0.5)
+    ),
+    url("/assets/images/hero.jpg") no-repeat center center;
+  background-size: cover;
+}

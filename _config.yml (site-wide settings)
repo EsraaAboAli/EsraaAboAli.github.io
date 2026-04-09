@@ -1,8 +1,0 @@
-title: "Esraa Ahmed AboAli"
-author_profile: true
-theme: "minimal-mistakes-jekyll"
-header:
-  overlay_color: "#D6336C"   # elite pink
-  overlay_filter: "0.5"
-  caption: "Finance | Analytics | Strategy"
-custom_css: ["assets/css/custom.css"]   # optional gradient
